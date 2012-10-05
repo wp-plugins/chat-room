@@ -7,11 +7,13 @@ Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Create chat rooms on your site for logged-in users to participate in.
+Create chat rooms on your site for users to participate in.
 
 == Description ==
 
-When activated, you will see a new post type to edit called Chat Rooms in the admin interface. A page for each chat room will be accessible from the Edit screen, and you can share the permalink on a post or page, or add it to a navigation menu.
+The Chat Room plugin allows administrators to easily create chat rooms for their users to participate in. Chat rooms are created via the WordPress administrative interface. After creation, users can access it via the permalink for the chat room.
+
+The plugin currently will only support servers that have direct PHP filesystem access, which may not be available on all hosting environments.
 
 == Installation ==
 
