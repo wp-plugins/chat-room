@@ -191,7 +191,7 @@ Class Chatroom {
 	function the_content_filter( $content ) {
 		global $post;
 		if ( $post->post_type != 'chat-room' ) 
-			return;
+			return $content;
 		if ( ! is_user_logged_in() )  {
 			?>You need to be logged in to participate in the chatroom.<?php 
 			return;
