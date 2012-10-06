@@ -2,15 +2,17 @@
 /*
 Plugin Name: Chat Room
 Plugin URI: http://webdevstudios.com/support/wordpress-plugins/
-Description: Create chat rooms within your site for logged-in users to interact in.
+Description: Chat Room for WordPress
 Author: WebDevStudios.com
-Version: 0.1.1
+Version: 0.1
 Author URI: http://webdevstudios.com/
 License: GPLv2 or later
 */
 
 Class Chatroom {
 	function __construct() {
+		register_activation_hook( __FILE__, array( $this, 'activation_hook' ) );
+		register_deactivation_hook( __FILE__, array( $this, 'deactivation_hook' ) );
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 		add_action( 'save_post', array( $this, 'maybe_create_chatroom_log_file' ), 10, 2 );
@@ -18,6 +20,15 @@ Class Chatroom {
 		add_action( 'wp_ajax_check_updates', array( $this, 'ajax_check_updates_handler' ) );
 		add_action( 'wp_ajax_send_message', array( $this, 'ajax_send_message_handler' ) );
 		add_filter( 'the_content', array( $this, 'the_content_filter' ) );
+	}
+
+	function activation_hook() {
+		$this->register_post_types();
+		flush_rewrite_rules();
+	}
+
+	function deactivation_hook() {
+		flush_rewrite_rules();
 	}
 
 	function register_post_types() {
@@ -208,6 +219,3 @@ Class Chatroom {
 }
 
 $chatroom = new Chatroom();
-
-
-
