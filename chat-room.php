@@ -4,7 +4,7 @@ Plugin Name: Chat Room
 Plugin URI: http://webdevstudios.com/support/wordpress-plugins/
 Description: Chat Room for WordPress
 Author: WebDevStudios.com
-Version: 0.1
+Version: 0.1.1
 Author URI: http://webdevstudios.com/
 License: GPLv2 or later
 */
