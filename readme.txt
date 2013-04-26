@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: ericlewis, williamsba1, webdevstudios
+Contributors: ericlewis, williamsba1, webdevstudios, tw2113
 Tags: chat room
 Requires at least: 3.3
 Tested up to: 3.4.2
