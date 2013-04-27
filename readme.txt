@@ -21,6 +21,7 @@ All official development on this plugin is on GitHub. Version bumps will still b
 
 1. Upload `chat-room` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Create chat rooms via newly added menu item.
 
 == Screenshots ==
 
