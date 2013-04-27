@@ -15,6 +15,8 @@ The Chat Room plugin allows administrators to easily create chat rooms for their
 
 The plugin currently will only support servers that have direct PHP filesystem access, which may not be available on all hosting environments.
 
+All official development on this plugin is on GitHub. Version bumps will still be published here on WordPress.org. You can find the repo at [https://github.com/WebDevStudios/Chat-Room](https://github.com/WebDevStudios/Chat-Room). Please file issues, bugs, and enhancement ideas there, when possible.
+
 == Installation ==
 
 1. Upload `chat-room` folder to the `/wp-content/plugins/` directory
